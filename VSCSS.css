@@ -1,0 +1,265 @@
+h1 {
+    color:black;
+    font-size: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 1  ;
+}
+
+p {
+    color:black;
+}
+
+b {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 550;
+    color:black;
+}
+
+nav {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: 100;
+    color:#484848
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    color:dimgrey;
+    z-index: 1;
+}
+
+a {
+    color:black;
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 100;
+    color:dimgrey;
+}
+
+h6 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 300px;
+    font-weight: 900px;
+}
+
+h5 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 140px;
+    font-weight: 900px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 100;
+    border-radius: 4px;
+    border-width: 1px;
+    border-style: solid;    
+    border-color: #dcdcdc;
+    padding: 6px;
+    padding-left: 30px;
+    padding-right: 1px;
+    margin: -4px;
+    color:dimgrey;
+    width: 10px;
+}
+
+video {
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+#button1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color:white;
+    background-color:#3d7de3;
+    border-radius: 4px;
+    border-width: 1px;
+    border-style: solid;    
+    border-color: #3d7de3;
+    padding: 14px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 12px;
+}
+
+#button2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #282828;
+    background-color: #e8e8e8;
+    border-radius: 4px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: darkgrey;
+    padding: 14px;
+    padding-left: 20px;
+    padding-right: 20px;
+    z-index: 995;
+}
+
+#hacked {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    color:white;
+    background-color:#3d7de3;
+    border-radius: 4px;
+    border-width: 1px;
+    border-style: solid;    
+    border-color: #3d7de3;
+    padding: 14px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 12px;
+}
+
+#bar {
+    border: none;
+    outline: none;
+    width: 78px;
+}
+
+#label:hover {
+    cursor: text;
+}
+
+#downer {
+    background-color: #3d7de3;
+    font-size: 15px;
+    font-weight: bolder;
+    border-radius: 4px;
+    border-width: 1px;
+    border-style: solid;    
+    border-color: #dcdcdc;
+    padding: 6px;
+    padding-left: 14px;
+    padding-right: 14px;
+    color:white;
+    margin: 2px;
+    position: relative;
+    left: 110px;
+}
+
+#navi {
+    position: fixed;
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+    background-color: white;
+    z-index: 1000; 
+    padding-right: 530px;
+    padding-top: 20px;
+    box-sizing: border-box;
+    height: 65px;
+    padding-bottom: 0px;
+    width: 100vw;
+}
+
+#navi2 {
+    height: 65px;
+}
+
+#icons{
+    z-index: 1001; 
+}
+
+#docs {
+    position: relative;
+    left: 200px;
+    bottom: 20px;
+    width: 39px;
+}
+
+#updates {
+    position: relative;
+    left: 271px;
+    bottom: 58px;
+    width: 66px;
+}
+
+#blog {
+    position: relative;
+    left: 367px;
+    bottom: 96px;
+    width: 37px;
+}
+
+#api {
+    position: relative;
+    left: 437px;
+    bottom: 134px;
+    width: 30px;
+}
+
+#extensions {
+    position: relative;
+    left: 497px;
+    bottom: 172px;
+    width: 84px;
+}
+
+#faq {
+    position: relative;
+    left: 615px;
+    bottom: 210px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: 100;
+    color:#484848;
+    width: 34px;
+}
+
+#github {
+    position: relative;
+    left: 678px;
+    bottom: 248px;
+    width: 115px;
+}
+
+#idiot-wn {
+    border-style: solid;
+    border-color: dimgrey;
+    background-color: lightgray;
+    padding: 0px;
+    height: 200px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#x_icon {
+    font-size: 20px;
+    font-weight: 100;
+    width: 20px;
+}
+
+.link {
+    color: #3d7de3;
+    text-decoration: underline;
+}
+
+.center {
+    text-align: center;
+}
+
+.margin-center {
+    text-align: center;
+    margin: auto;
+}
+
+.right{
+    text-align: right;
+}

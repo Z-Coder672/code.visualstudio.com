@@ -1,0 +1,36 @@
+<a href="#" onclick="openAndFullscreen(event)">Open and Fullscreen</a>
+
+<script>
+  function openAndFullscreen(event) {
+    // Prevent the default link behavior
+    event.preventDefault();
+
+    // Open a new window
+    const newWindow = window.open("", "_blank", "width=800,height=600");
+
+    // Check if the new window was successfully created
+    if (newWindow) {
+      // Add content to the new window
+      newWindow.document.write(`
+        <p>This window will go fullscreen shortly.</p>
+        <script>
+          // Request fullscreen within the new window
+          document.addEventListener('DOMContentLoaded', () => {
+            if (document.documentElement.requestFullscreen) {
+              document.documentElement.requestFullscreen();
+            } else if (document.documentElement.webkitRequestFullscreen) {
+              document.documentElement.webkitRequestFullscreen(); // For Safari
+            } else if (document.documentElement.msRequestFullscreen) {
+              document.documentElement.msRequestFullscreen(); // For IE11
+            } else {
+              alert('Fullscreen is not supported in this browser.');
+            }
+          });
+        <\/script>
+      `);
+      newWindow.document.close();
+    } else {
+      alert("Popup blocked! Please allow popups for this site.");
+    }
+  }
+</script>
