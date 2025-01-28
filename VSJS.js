@@ -15,12 +15,149 @@ document.addEventListener("DOMContentLoaded", () => {
   const faq = document.getElementById("faq");
   const api = document.getElementById("api");
   const updates = document.getElementById("updates");
+  const home = document.getElementById("home");
+  const freeCopi = document.getElementById("button2");
+  const hed = document.getElementById("hed");
+  const wedfg = document.getElementById("wedfg");
+  const platy = document.getElementById("platy");
+  const inny = document.getElementById("inny");
   blog.style.bottom = "96px";
+  let size = 1;
+  let added = false;
+  let shrinker = false;
+
+  inny.addEventListener("click", () => {
+    if (!shrinker) {
+      const shrunk = document.createElement("p");
+      shrunk.style.position = "fixed";
+      shrunk.style.top = "50vh";
+      shrunk.style.left = "50vw";
+      shrunk.style.transform = "translate(-50%, -50%)";
+      shrunk.textContent = "You Activated the UltiShrinker";
+      shrunk.style.textAlign = "center";
+      shrunk.style.zIndex = "100000";
+      shrunk.style.fontSize = "100px";
+      shrunk.style.top = "70vh";
+      shrunk.style.width = "100vh";
+      shrunk.style.color = "black";
+      shrunk.style.fontWeight = "900";
+      document.body.appendChild(shrunk);
+      document.body.style.top = "-500px";
+      setTimeout(() => {
+        shrunk.remove();
+      }, 5000);
+      shrinker = true;
+    }
+    document.body.style.transform = `scale(${size})`;
+    if (!added) {
+      document.body.addEventListener("click", () => {
+        size -= 0.02;
+        if (size <= 0) {
+          delete document;
+        }
+        document.body.style.transform = `scale(${size})`;
+      });
+      added = true;
+    }
+  });
+
+  platy.addEventListener("click", () => {
+    let circSize = 0;
+    const crack = document.createElement("img");
+    crack.src = "crack.png";
+    setTimeout(() => {
+      document.body.appendChild(crack);
+      document.documentElement.requestFullscreen();
+      crack.style.clipPath = "circle(0% at 329px 343px)";
+      crack.style.position = "fixed"; // Add fixed position
+      crack.style.top = "0";         // Position at top
+      crack.style.left = "0";        // Position at left
+      crack.style.width = "100vw";
+      crack.style.height = "100vh";
+      crack.style.backgroundColor = "transparent"; // Make background transparent
+      crack.style.zIndex = "9999";               // Ensure it's on top
+      setInterval(() => {
+        setTimeout(() => {
+          circSize += Math.floor(Math.random() * 100) / 100;
+          crack.style.clipPath = `circle(${circSize}% at 329px 343px)`;
+        }, Math.floor(Math.random() * 2000) + 1000);
+      }, 100);
+    }, 100);
+  });
+
+  const elements = [
+    search,
+    MGS,
+    button2,
+    downer,
+    WhatTheHeck,
+    freeCopilot,
+    AUUGHHH,
+    blog,
+    extensions,
+    github,
+    docs,
+    fart,
+    faq,
+    updates,
+    home,
+    freeCopi,
+    hed,
+    wedfg,
+  ];
+
+  const chars =
+    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*";
+  api.addEventListener("click", () => {
+    const intervalId = setInterval(() => {
+      elements.forEach((el) => {
+        if (el && el.textContent) {
+          if (!el.dataset.originalContent) {
+            el.dataset.originalContent = el.innerHTML;
+          }
+          let randomText = "";
+          for (let i = 0; i < 5; i++) {
+            randomText += chars.charAt(
+              Math.floor(Math.random() * chars.length)
+            );
+          }
+          el.textContent = randomText;
+        }
+        let r = Math.floor(Math.random() * 255);
+        let g = Math.floor(Math.random() * 255);
+        let b = Math.floor(Math.random() * 255);
+        el.style.color = `rgb(${r}, ${g}, ${b})`;
+        r = Math.floor(Math.random() * 255);
+        g = Math.floor(Math.random() * 255);
+        b = Math.floor(Math.random() * 255);
+        el.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+      });
+    }, 30);
+    setTimeout(() => {
+      clearInterval(intervalId);
+      elements.forEach((el) => {
+        if (el) {
+          el.style.color = "";
+          el.style.backgroundColor = "";
+          if (el.dataset.originalContent) {
+            el.innerHTML = el.dataset.originalContent;
+            delete el.dataset.originalContent;
+          }
+        }
+      });
+    }, 7000);
+  });
 
   search.addEventListener("keydown", (event) => {
     if (event.key === "Enter") {
       const searchValue = search.value;
-      if (searchValue.trim() !== "") {
+      if (
+        searchValue !== "" &&
+        searchValue !== " " &&
+        searchValue !== "  " &&
+        searchValue !== "   " &&
+        searchValue !== "    "
+      ) {
         if (searchValue === "skibidi toilet") {
           WhatTheHeck.play();
         }
@@ -80,8 +217,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const rickRolled = document.createElement("p");
     rickRolled.style.transform = "rotate(180deg)";
     rickRolled.style.position = "fixed";
-    rickRolled.style.top = "700px";
-    rickRolled.style.left = "335px";
+    rickRolled.style.width = "100vh";
+    rickRolled.style.top = "89vh";
+    rickRolled.style.left = "50vw";
+    rickRolled.style.transform = "translate(-50%, -50%)";
+    rickRolled.style.textAlign = "center";
     rickRolled.textContent = "You Got Upside Down RickRolled!";
     rickRolled.style.zIndex = "100000";
     rickRolled.style.fontSize = "50px";
@@ -107,8 +247,11 @@ document.addEventListener("DOMContentLoaded", () => {
     document.body.appendChild(rickRoll);
     const rickRolled = document.createElement("p");
     rickRolled.style.position = "fixed";
-    rickRolled.style.top = "700px";
-    rickRolled.style.left = "480px";
+    rickRolled.style.width = "100vh";
+    rickRolled.style.top = "89vh";
+    rickRolled.style.left = "50vw";
+    rickRolled.style.transform = "translate(-50%, -50%)";
+    rickRolled.style.textAlign = "center";
     rickRolled.textContent = "You Got RickRolled!";
     rickRolled.style.zIndex = "100000";
     rickRolled.style.fontSize = "50px";
@@ -145,9 +288,9 @@ document.addEventListener("DOMContentLoaded", () => {
   updates.addEventListener("click", () => {
     const fupdate = window.open(
       "https://updatefaker.com/windows10/index.html",
-      "_blank")
+      "_blank"
+    );
     fupdate.focus();
-
   });
 
   freeCopilot.addEventListener("click", (event) => {
@@ -191,7 +334,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   MGS.addEventListener("click", () => {
     const searchValue = search.value;
-    if (searchValue !== "" && searchValue !== " " && searchValue !== "  " && searchValue !== "   " && searchValue !== "    " && searchValue) {
+    if (
+      searchValue !== "" &&
+      searchValue !== " " &&
+      searchValue !== "  " &&
+      searchValue !== "   " &&
+      searchValue !== "    "
+    ) {
       if (searchValue === "skibidi toilet") {
         WhatTheHeck.play();
       }
