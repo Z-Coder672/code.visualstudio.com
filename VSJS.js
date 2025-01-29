@@ -328,7 +328,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   github.addEventListener("click", () => {
     window.open(
-      "file:///Users/dr_z_i_m_m/code.visualstudio.com/YouAreAnIdiot.htm"
+      "./YouAreAnIdiot.htm"
     );
   });
 
