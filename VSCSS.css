@@ -105,7 +105,7 @@ video {
         font-size: 2vw;
     }
     #navi {
-        flex-direction: column;
+        flex-direction: row;
         text-align: center;
         padding: 10px 2vw;
     }
