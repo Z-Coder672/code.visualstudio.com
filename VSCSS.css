@@ -1,6 +1,6 @@
 h1 {
     color:black;
-    font-size: 70px;
+    font-size: clamp(4.29rem, 4.861vw, 4.46rem);
     font-family: Arial, Helvetica, sans-serif;
     z-index: 1  ;
 }
@@ -10,7 +10,7 @@ p {
 }
 
 b {
-    font-size: 20px;
+    font-size: clamp(1.23rem, 1.389vw, 1.27rem);
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 550;
     color:black;
@@ -18,14 +18,14 @@ b {
 
 nav {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 17px;
+    font-size: clamp(1.04rem, 1.181vw, 1.08rem);
     font-weight: 100;
     color:#484848
 }
 
 h3 {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: clamp(0.98rem, 1.111vw, 1.02rem);
     font-weight: 100;
     color:dimgrey;
     z-index: 1;
@@ -42,95 +42,95 @@ a:hover {
 
 p {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 13px;
+    font-size: clamp(0.8rem, 0.903vw, 0.83rem);
     font-weight: 100;
     color:dimgrey;
 }
 
 h6 {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 300px;
-    font-weight: 900px;
+    font-size: clamp(18.38rem, 20.833vw, 19.12rem);
+    font-weight: clamp(55.12rem, 62.5vw, 57.38rem);
 }
 
 h5 {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 140px;
-    font-weight: 900px;
+    font-size: clamp(8.57rem, 9.722vw, 8.93rem);
+    font-weight: clamp(55.12rem, 62.5vw, 57.38rem);
 }
 
 label {
-    font-size: 14px;
+    font-size: clamp(0.86rem, 0.972vw, 0.89rem);
     font-weight: 100;
-    border-radius: 4px;
-    border-width: 1px;
+    border-radius: clamp(0.24rem, 0.278vw, 0.26rem);
+    border-width: clamp(0.061rem, 0.069vw, 0.064rem);
     border-style: solid;    
     border-color: #dcdcdc;
-    padding: 6px;
-    padding-left: 30px;
-    padding-right: 1px;
-    margin: -4px;
+    padding: clamp(0.367rem, 0.417vw, 0.383rem);
+    padding-left: clamp(1.837rem, 2.083vw, 1.913rem);
+    padding-right: clamp(0.061rem, 0.069vw, 0.064rem);
+    margin: clamp(-0.245rem, -0.278vw, -0.255rem);
     color:dimgrey;
-    width: 10px;
+    width: clamp(0.613rem, 0.694vw, 0.637rem);
 }
 
 video {
-    border-radius: 14px;
+    border-radius: clamp(0.86rem, 0.972vw, 0.89rem);
     overflow: hidden;
 }
 
 #button1 {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
+    font-size: clamp(1.103rem, 1.25vw, 1.147rem);
     font-weight: 500;
     color:white;
     background-color:#3d7de3;
-    border-radius: 4px;
-    border-width: 1px;
+    border-radius: clamp(0.245rem, 0.278vw, 0.255rem);
+    border-width: clamp(0.061rem, 0.069vw, 0.064rem);
     border-style: solid;    
     border-color: #3d7de3;
-    padding: 14px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin: 12px;
+    padding: clamp(0.857rem, 0.972vw, 0.893rem);
+    padding-left: clamp(1.225rem, 1.389vw, 1.275rem);
+    padding-right: clamp(1.225rem, 1.389vw, 1.275rem);
+    margin: clamp(0.735rem, 0.833vw, 0.765rem);
 }
 
 #button2 {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
+    font-size: clamp(1.103rem, 1.25vw, 1.147rem);
     font-weight: 500;
     color: #282828;
     background-color: #e8e8e8;
-    border-radius: 4px;
-    border-width: 1px;
+    border-radius: clamp(0.245rem, 0.278vw, 0.255rem);
+    border-width: clamp(0.061rem, 0.069vw, 0.064rem);
     border-style: solid;
     border-color: darkgrey;
-    padding: 14px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: clamp(0.857rem, 0.972vw, 0.893rem);
+    padding-left: clamp(1.225rem, 1.389vw, 1.275rem);
+    padding-right: clamp(1.225rem, 1.389vw, 1.275rem);
     z-index: 995;
 }
 
 #hacked {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
+    font-size: clamp(1.531rem, 1.736vw, 1.594rem);
     font-weight: 500;
     color:white;
     background-color:#3d7de3;
-    border-radius: 4px;
-    border-width: 1px;
+    border-radius: clamp(0.245rem, 0.278vw, 0.255rem);
+    border-width: clamp(0.061rem, 0.069vw, 0.064rem);
     border-style: solid;    
     border-color: #3d7de3;
-    padding: 14px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin: 12px;
+    padding: clamp(0.857rem, 0.972vw, 0.893rem);
+    padding-left: clamp(1.225rem, 1.389vw, 1.275rem);
+    padding-right: clamp(1.225rem, 1.389vw, 1.275rem);
+    margin: clamp(0.735rem, 0.833vw, 0.765rem);
 }
 
 #bar {
     border: none;
     outline: none;
-    width: 78px;
+    width: clamp(4.777rem, 5.417vw, 4.973rem);
 }
 
 #label:hover {
@@ -139,38 +139,38 @@ video {
 
 #downer {
     background-color: #3d7de3;
-    font-size: 15px;
+    font-size: clamp(0.919rem, 1.042vw, 0.956rem);
     font-weight: bolder;
-    border-radius: 4px;
-    border-width: 1px;
+    border-radius: clamp(0.245rem, 0.278vw, 0.255rem);
+    border-width: clamp(0.061rem, 0.069vw, 0.064rem);
     border-style: solid;    
     border-color: #dcdcdc;
-    padding: 6px;
-    padding-left: 14px;
-    padding-right: 14px;
+    padding: clamp(0.367rem, 0.417vw, 0.383rem);
+    padding-left: clamp(0.857rem, 0.972vw, 0.893rem);
+    padding-right: clamp(0.857rem, 0.972vw, 0.893rem);
     color:white;
-    margin: 2px;
+    margin: clamp(0.122rem, 0.139vw, 0.128rem);
     position: relative;
-    left: 110px;
+    left: clamp(6.737rem, 7.639vw, 7.013rem);
 }
 
 #navi {
     position: fixed;
-    border-width: 1px;
+    border-width: clamp(0.061rem, 0.069vw, 0.064rem);
     border-style: solid;
     border-color: white;
     background-color: white;
     z-index: 1000; 
-    padding-right: 530px;
-    padding-top: 20px;
+    padding-right: clamp(32.462rem, 36.806vw, 33.788rem);
+    padding-top: clamp(1.225rem, 1.389vw, 1.275rem);
     box-sizing: border-box;
-    height: 65px;
-    padding-bottom: 0px;
+    height: clamp(3.981rem, 4.514vw, 4.144rem);
+    padding-bottom: clamp(0.0rem, 0.0vw, 0.0rem);
     width: 100vw;
 }
 
 #navi2 {
-    height: 65px;
+    height: clamp(3.981rem, 4.514vw, 4.144rem);
 }
 
 #icons{
@@ -179,71 +179,71 @@ video {
 
 #docs {
     position: relative;
-    left: 200px;
-    bottom: 20px;
-    width: 39px;
+    left: clamp(12.25rem, 13.889vw, 12.75rem);
+    bottom: clamp(1.225rem, 1.389vw, 1.275rem);
+    width: clamp(2.389rem, 2.708vw, 2.486rem);
 }
 
 #updates {
     position: relative;
-    left: 271px;
-    bottom: 58px;
-    width: 66px;
+    left: clamp(16.599rem, 18.819vw, 17.276rem);
+    bottom: clamp(3.552rem, 4.028vw, 3.698rem);
+    width: clamp(4.042rem, 4.583vw, 4.208rem);
 }
 
 #blog {
     position: relative;
-    left: 367px;
-    bottom: 96px;
-    width: 37px;
+    left: clamp(22.479rem, 25.486vw, 23.396rem);
+    bottom: clamp(5.88rem, 6.667vw, 6.12rem);
+    width: clamp(2.266rem, 2.569vw, 2.359rem);
 }
 
 #api {
     position: relative;
-    left: 437px;
-    bottom: 134px;
-    width: 30px;
+    left: clamp(26.766rem, 30.347vw, 27.859rem);
+    bottom: clamp(8.207rem, 9.306vw, 8.543rem);
+    width: clamp(1.837rem, 2.083vw, 1.913rem);
 }
 
 #extensions {
     position: relative;
-    left: 497px;
-    bottom: 172px;
-    width: 84px;
+    left: clamp(30.441rem, 34.514vw, 31.684rem);
+    bottom: clamp(10.535rem, 11.944vw, 10.965rem);
+    width: clamp(5.145rem, 5.833vw, 5.355rem);
 }
 
 #faq {
     position: relative;
-    left: 615px;
-    bottom: 210px;
+    left: clamp(37.669rem, 42.708vw, 39.206rem);
+    bottom: clamp(12.862rem, 14.583vw, 13.388rem);
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 17px;
+    font-size: clamp(1.041rem, 1.181vw, 1.084rem);
     font-weight: 100;
     color:#484848;
-    width: 34px;
+    width: clamp(2.083rem, 2.361vw, 2.167rem);
 }
 
 #github {
     position: relative;
-    left: 678px;
-    bottom: 248px;
-    width: 115px;
+    left: clamp(41.527rem, 47.083vw, 43.223rem);
+    bottom: clamp(15.19rem, 17.222vw, 15.81rem);
+    width: clamp(7.044rem, 7.986vw, 7.331rem);
 }
 
 #idiot-wn {
     border-style: solid;
     border-color: dimgrey;
     background-color: lightgray;
-    padding: 0px;
-    height: 200px;
+    padding: clamp(0.0rem, 0.0vw, 0.0rem);
+    height: clamp(12.25rem, 13.889vw, 12.75rem);
     text-align: center;
     vertical-align: middle;
 }
 
 #x_icon {
-    font-size: 20px;
+    font-size: clamp(1.225rem, 1.389vw, 1.275rem);
     font-weight: 100;
-    width: 20px;
+    width: clamp(1.225rem, 1.389vw, 1.275rem);
 }
 
 .link {
